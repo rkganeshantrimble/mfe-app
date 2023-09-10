@@ -1,0 +1,40 @@
+/* styles.css */
+
+/* Products Component */
+.products {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .product-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .product-card img {
+    max-width: 100%;
+  }
+  
+  /* Product Component */
+  .single-product {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .single-product img {
+    max-width: 100%;
+    margin: 20px 0;
+  }
+  
+  .product-images img {
+    max-width: 100%;
+    margin: 10px;
+  }
+  

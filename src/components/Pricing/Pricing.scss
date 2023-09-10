@@ -1,0 +1,63 @@
+.App {
+  font-family: Benton Sans;
+  text-align: center;
+  margin: 80px auto;
+  width: 140px;
+}
+.container {
+  display: flex;
+  /* gap: 20px; */
+  justify-content: center;
+  align-items: center;
+}
+.counter-title {
+  color: #363545;
+}
+.counter-title-icon {
+  width: 20px;
+  height: 20.322px;
+  flex-shrink: 0;
+  padding-left: 9px;
+  padding-right: 60px;
+}
+.counter {
+  /* width: 150px; */
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid #e0e1e9;
+  border-radius: 2px;
+  padding: 12px 20px;
+  border-bottom: 1px solid #6a6e79;
+}
+#count {
+  border: 1px solid #ffffff;
+  text-align: center;
+  width: 74px;
+  color: #252a2e;
+  text-align: center;
+  /* font-family: Benton Sans; */
+  font-size: 18px;
+  /* font-style: normal; */
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.021px;
+}
+#decrement {
+  background-color: white;
+  border: none;
+  color: #464b52;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+#increment {
+  background-color: white;
+  border: none;
+  color: #464b52;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+input:focus {
+  outline: none;
+}
