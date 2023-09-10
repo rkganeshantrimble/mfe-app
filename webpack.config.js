@@ -5,6 +5,9 @@ const deps = require('./package.json').dependencies;
 module.exports = (_, argv) => ({
   output: {
     publicPath: 'https://ax-ecom-microfrontend.netlify.app:8080/',
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+    },
   },
 
   resolve: {
