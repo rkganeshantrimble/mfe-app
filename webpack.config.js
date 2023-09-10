@@ -14,8 +14,8 @@ module.exports = (_, argv) => ({
   devServer: {
     port: 8080,
     historyApiFallback: true,
-    // disableHostCheck: true,
-    // allowedHosts: 'all',
+    disableHostCheck: true,
+    allowedHosts: 'all',
     headers: {
       'Access-Control-Allow-Origin': '*',
     },
