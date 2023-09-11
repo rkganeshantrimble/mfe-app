@@ -41,28 +41,24 @@ export const renderPricing = (props: PricingProps) => {
   };
   return (
     <>
+      <button
+        onClick={() => {
+          if (localStorage.getItem('testToken'))
+            setTestToken(localStorage.getItem('testToken'));
+        }}
+        style={{
+          border: '1px solid black',
+          backgroundColor: 'tomato',
+          padding: '5px 7px',
+          margin: '75px auto',
+          fontSize: 'small',
+          cursor: 'pointer',
+          width: '200px',
+        }}
+      >
+        {testToken ? testToken : 'Click to get the testToken from localStorage'}
+      </button>
       <div className="App container">
-        <div className="div-test-token-btn">
-          <button
-            onClick={() => {
-              if (localStorage.getItem('testToken'))
-                setTestToken(localStorage.getItem('testToken'));
-            }}
-            style={{
-              border: '1px solid black',
-              backgroundColor: 'tomato',
-              padding: '5px 7px',
-              margin: '5px',
-              fontSize: 'small',
-              cursor: 'pointer',
-              width: '200px',
-            }}
-          >
-            {testToken
-              ? testToken
-              : 'Click to get the testToken from localStorage'}
-          </button>
-        </div>
         <div className="counter-title">{text}</div>
         <div className="counter-title-icon">
           <svg
